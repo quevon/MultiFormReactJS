@@ -3,10 +3,10 @@ import React from "react"
 
 function OtherInfo(){
     return(
-        <div className="form">
-            <p>OtherInfoPage</p>
+        <div className="other-info-container">
+            <input type="text" placeholder="Nationality..."></input><br/>
+            <input type="text" placeholder="Other..."></input><br/>
         </div>
-        
     )
 }
 
