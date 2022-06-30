@@ -48,10 +48,14 @@ function Form(){
                             setPage((currPage) => currPage - 1)
                     }}>Prev</button>
                     <button 
-                        disabled={page == FormTitles.length - 1}    
                         onClick={() => {
-                            setPage((currPage) => currPage + 1)
-                    }}>Next</button>
+                            if(page === FormTitles.length -1){
+                                alert("Form Submitted")
+                                console.log(formData);  
+                            }else{
+                                setPage((currPage) => currPage + 1)
+                            }
+                    }}>{page === FormTitles.length - 1? "Submit" : "Next"}</button>
 
                 </div>
             </div>
