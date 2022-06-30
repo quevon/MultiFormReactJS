@@ -1,5 +1,9 @@
 .App {
   text-align: center;
 }
-
+.progressbar{
+  color: red;
+  height: 10px;
+  width:100%;
+}
 
